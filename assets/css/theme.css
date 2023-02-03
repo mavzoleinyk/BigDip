@@ -1,0 +1,100 @@
+/* Секция Последние отзывы */
+.reviews{
+    padding-bottom: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #fafbfc;
+    margin: 2rem 0;
+}
+.reviews-row{
+    display: flex;
+}
+.reviews-item{
+    background-color: #fff;
+    overflow: hidden;
+    padding: 1rem;
+}
+.reviews-item .name{
+    color: #15216a;
+    font-family: 'Avenir-Bold';
+    font-size: 1.25rem;
+    display: inline-block;
+}
+.reviews .btn{
+    border-radius: 2px;
+    font-family: 'Avenir-Medium';
+    display: inline;
+    border: none;
+    padding: 0.75rem 3rem;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    font-size: 1.125rem;
+    background-color: rgb(18, 113, 240);
+    box-shadow: 0px 4px 20px 0px rgb(18 113 240 / 30%);
+}
+.reviews .btn:hover{
+    background: #15216a;
+}
+.rewiews-posts .comment-name .comment-date{
+    font-size: 12px;
+}
+
+/* Страница товара диплома */
+.prod__info .title{
+    text-align: left;
+    font-size: 1.1rem;
+    color: #15216a;
+    display: flow-root;
+    font-family: 'Avenir-Bold';
+    margin-bottom: 20px;
+}
+.list-row .p-list{
+    margin-bottom: 20px;
+}
+.list-row .p-list .p-list--item{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    font-size: 14px;
+}
+.list-row .shipping-details{
+    margin-bottom: 20px;
+}
+.list-row .shipping-details p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.content-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content-price .price{
+    font-size: 26px;
+    color: #15216a;
+    font-family: 'Avenir-Bold';
+}
+.prod__info .content-bottom{
+    margin-top: 50px;
+}
+/* Гарантии */
+.garant-item .title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.garant-item ul{
+    list-style: none;
+    padding-left: 0;
+}
+.garant-item ul li{
+    font-size: 18px;
+    display: flex;
+}
+.garant-item ul li::before{
+    content: '\2705';
+    padding-right: 15px;
+}
