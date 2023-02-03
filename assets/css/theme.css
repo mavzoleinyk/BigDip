@@ -1,3 +1,7 @@
+/* Custom style */
+.logo img{
+    max-width: 56px;
+}
 /* Секция Последние отзывы */
 .reviews{
     padding-bottom: 2rem;
@@ -97,4 +101,73 @@
 .garant-item ul li::before{
     content: '\2705';
     padding-right: 15px;
+}
+/* Block Fishka */
+.sub-title{
+    text-align: left;
+    font-size: 1.25rem;
+    color: #15216a;
+    display: flow-root;
+    font-family: 'Avenir-Bold';
+    margin-bottom: 20px;
+}
+.fishka-item .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.fishka-item .icon img{
+    border-radius: 50%;
+}
+/* Block Number */
+.numbers{
+    background: url(../images/steps.png) #fbfbfc no-repeat top right;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.numbers-block ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+.numbers-block ul li{
+    font-family: 'Avenir-Bold';
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+.numbers-block ul li span{
+    font-size: 1.55rem;
+    color: #15216a;
+    font-family: 'Avenir-Bold';
+}
+/* Block Our team */
+.team-item{
+    position: relative;
+}
+.team-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(18, 113, 240, .3);;
+}
+.team-item img{
+    display: block;
+    max-width: 100%;
+}
+.team-item .team-item-title{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.team-item .team-item-name{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.3rem;
 }
