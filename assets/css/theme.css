@@ -1,7 +1,190 @@
 /* Custom style */
+body{
+    background-color: #f5f7fe;
+}
+a{
+    color: #6440fb;
+}
 .logo img{
     max-width: 56px;
 }
+/* Buttons */
+header .call .btn{
+    border-radius: 1rem;
+    background-color: rgb(100,64,251);
+    border: 1px solid rgb(100,64,251);
+}
+header .call .btn:hover, header .call .btn:focus{
+    background-color: transparent;
+    color: rgb(100,64,251);
+}
+
+.btn-standart{
+    border-radius: 1rem;
+    background-color: rgb(100,64,251);
+    border: 2px solid rgb(100,64,251);
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    display: inline-block;
+    padding:.75rem 2rem;
+    text-align:center;
+    color:#fff;
+    outline:none;
+    font-size:1.125rem;
+    text-decoration: none;
+}
+.btn-standart:hover, .btn-standart:focus{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+}
+
+.diploms .diplom-item .btn-standart {
+    font-family: 'Source Serif Pro';
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    border: 1px solid rgb(100,64,251);
+}
+.diploms .diplom-item .btn-standart:hover, .diploms .diplom-item .btn-standart:focus {
+    color: rgb(100,64,251);
+    border: 1px solid rgb(100,64,251);
+}
+.diploms .diplom-item .diplom-advantages ul li{
+    position: relative;
+}
+.diploms .diplom-item .diplom-advantages ul li::before{
+    content: '⋅';
+    position: absolute;
+    color: rgb(100,64,251);
+    left: -7px;
+    font-size: 4rem;
+    font-weight: 700;
+    top: 0px;
+    line-height: 36px;
+}
+
+.moduletablearticles .item .readmore .btn{
+    border-radius: 1rem;
+    border: 1px solid rgb(100,64,251);
+    color: rgb(100,64,251);
+    box-shadow: none;
+}
+.moduletablearticles .item .readmore .btn:hover{
+    background-color: rgb(100,64,251);
+    box-shadow: none;
+}
+.btn-btn{
+    border-radius: 1rem;
+    border: 1px solid rgb(100,64,251);
+    color: #fff;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    margin: 0 auto;
+    min-width: 200px;
+    display: block;
+    color: #fff;
+    background-color: rgb(100,64,251);
+    box-shadow: none;
+}
+.btn-btn:hover{
+    color: rgb(100,64,251);
+    background-color: transparent;
+    border: 1px solid rgb(100,64,251);
+    box-shadow: none;
+}
+.moduletable .btn-btn{
+    width: 250px;
+    text-align: center;
+}
+/* Header */
+.top-menu{
+    background-color: #140342;
+    padding: 20px 0;
+}
+.header__main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header__top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 0 60%;
+}
+.header__btn{
+    flex: 1 0 auto;
+}
+.header__contacs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.header__contacs .mail{
+    margin-bottom: .5rem;
+}
+.city .city__btn{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    color: #140342;
+}
+
+/* Sidebar */
+
+.aside .navbar-collapse .moduletable{
+    background: #f4f1fe;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+.aside .aside-title{
+    background: #140342;
+    color: #6440fb;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem .5rem 0 0;
+}
+.aside .aside-title a{
+    color: #fff;
+}
+.aside ul.menu .nav-item .nav-link{
+    color: #6440fb;
+    margin-bottom: .3rem;
+    padding: 0;
+    font-size: 1rem;
+}
+.aside ul.menu .nav-item .nav-link:after{
+    background-color: #6440fb;
+}
+/* Top banner */
+.top-banner{
+    background-image: url(../images/banner1.jpg);
+    position: relative;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+}
+.top-banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20,3,66,.3);
+    border-radius: 1rem;
+}
+.top-banner .custom{
+    z-index: 1;
+}
+
+/* Diploms short block */
+.diploms .diplom-item .diplom-item__bottom{
+    padding: 0 1rem;
+}
+
 /* Секция Последние отзывы */
 .reviews{
     padding-bottom: 2rem;
@@ -9,9 +192,13 @@
     padding-right: 15px;
     background: #fafbfc;
     margin: 2rem 0;
+    box-shadow: 0px 25px 70px 0px #01213A12;
+    border: 1px solid #ededed;
+    border-radius: 0.5rem;
 }
 .reviews-row{
     display: flex;
+    margin-bottom: 1rem;
 }
 .reviews-item{
     background-color: #fff;
@@ -25,24 +212,36 @@
     display: inline-block;
 }
 .reviews .btn{
-    border-radius: 2px;
-    font-family: 'Avenir-Medium';
-    display: inline;
-    border: none;
-    padding: 0.75rem 3rem;
+    font-family: 'Source Serif Pro';
+    display: block;
+    text-align: center;
+    outline: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid rgb(100,64,251);
+    padding: 0.75rem 2rem;
     text-align: center;
     color: #fff;
-    outline: none;
-    width: 100%;
-    font-size: 1.125rem;
-    background-color: rgb(18, 113, 240);
-    box-shadow: 0px 4px 20px 0px rgb(18 113 240 / 30%);
+    text-decoration: none;
+    background-color: rgb(100,64,251);
+    margin: 0 auto;
+    max-width: 200px;
 }
 .reviews .btn:hover{
-    background: #15216a;
+    color: rgb(100,64,251);
+    border: 1px solid rgb(100,64,251);
+    background-color: #fff;
 }
 .rewiews-posts .comment-name .comment-date{
     font-size: 12px;
+}
+
+/* Moduletablearticles */
+.moduletablearticles{
+    box-shadow: 0px 25px 70px 0px #01213A12;
+    border: 1px solid #ededed;
+    border-radius: 0.5rem;
 }
 
 /* Страница товара диплома */
@@ -125,6 +324,9 @@
     background: url(../images/steps.png) #fbfbfc no-repeat top right;
     padding: 2rem;
     margin-bottom: 1rem;
+    box-shadow: 0px 25px 70px 0px #01213A12;
+    border: 1px solid #ededed;
+    border-radius: 0.5rem;
 }
 .numbers-block ul {
     list-style: none;
@@ -143,6 +345,8 @@
 /* Block Our team */
 .team-item{
     position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 .team-item::before{
     content: '';
@@ -151,7 +355,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(18, 113, 240, .3);;
+    background-color: rgba(20,3,66,0.3);
 }
 .team-item img{
     display: block;
@@ -170,4 +374,140 @@
     left: 20px;
     color: #fff;
     font-size: 1.3rem;
+}
+
+/* Block profesion */
+.moduletable .prof__item{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: .5rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+.moduletable .prof__item::after{
+    content: '';
+    background-color: rgba(100,64,251, .4);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 500ms ease; 
+}
+.moduletable .prof__item:hover::after{
+    background-color: rgba(100,64,251, .8);
+}
+.moduletable .prof__item-img{
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.moduletable .prof__item-img img{
+    display: block;
+    width: 100%;
+}
+.moduletable .prof__item .prof__item-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.prof__list{
+    display: flex!important;
+    flex-wrap: wrap;
+}
+.prof__list li{
+    flex: 1 0 25%;
+    background-image: none;
+    font-size: 1rem;
+}
+
+/* City list */
+.city__list{
+    display: flex!important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.city__list li{
+    background-image: none!important;
+    flex: 1 0 25%;
+    position: relative;
+}
+.city__list li span{
+    position: absolute;
+    left: -15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Footer */
+
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 2rem;
+}
+
+/* Media */
+@media(max-width:1000px){
+    .top-banner{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .breadcrumb-item a, .breadcrumb-item span{
+        font-size: 12px;
+    }
+    .list-row .p-list .p-list--item{
+        max-width: 100%;
+    }
+    .team-item{
+        margin-bottom: 2rem;
+    }
+    .team-item img{
+        max-width: auto;
+        min-width: 100%;
+    }
+    .diploms .diplom-item .diplom-name{
+        padding: 0 1rem;
+    }
+    .diploms .diplom-item .diplom-name a{
+        margin: 0;
+    }
+    .footer__top{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer__top .logo__footer{
+        margin-bottom: 1rem;
+    }
+    .footer__top .phone{
+        margin-bottom: 1rem;
+    }
+}
+@media(max-width:620px){
+    .city__list li{
+        flex: 1 0 33%;
+    }
+}
+@media(max-width:520px){
+    .content-price{
+        flex-direction: column;
+    }
+    .header__contacs{
+        flex-direction: column;
+    }
+}
+@media(max-width:480px){
+    .city__list li{
+        flex: 1 0 50%;
+    }
 }
